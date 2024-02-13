@@ -44,9 +44,10 @@
             </figure>
             <h3 class="text-3xl font-semibold">Triangle</h3>
             <p>Area [A] = 0.5 X b X h</p>
-            <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
+                  id="triangle-base"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="b"
@@ -55,6 +56,7 @@
               </div>
               <div>
                 <input
+                  id="triangle-height"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="h"
@@ -63,6 +65,7 @@
               </div>
             </div>
             <button
+              id="btn-triangle"
               class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
             >
               Calculate
@@ -80,7 +83,7 @@
             </figure>
             <h3 class="text-3xl font-semibold">Rectangle</h3>
             <p>Area [A] = 0.5 X w X l</p>
-            <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
                   type="text"
@@ -116,7 +119,7 @@
             </figure>
             <h3 class="text-3xl font-semibold">Parallelogram</h3>
             <p>Area [A] = b X h</p>
-            <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
                   type="text"
@@ -148,7 +151,7 @@
             </figure>
             <h3 class="text-3xl font-semibold">Rhombus</h3>
             <p>Area [A] = 0.5 X d1 X d2</p>
-            <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
                   type="text"
@@ -184,7 +187,7 @@
             </figure>
             <h3 class="text-3xl font-semibold">Pentagon</h3>
             <p>Area [A] = 0.5 X p X b</p>
-            <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
                   type="text"
@@ -216,7 +219,7 @@
             </figure>
             <h3 class="text-3xl font-semibold">Ellipse</h3>
             <p>Area [A] = π X a X b</p>
-            <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
                   type="text"
@@ -241,14 +244,16 @@
             </button>
           </div>
         </div>
-        <div>
-          <h2
-            class="font-bold text-2xl border border-gray-300 rounded-md p-5 h-[250px]"
-          >
-            Area Calculation
-          </h2>
+        <div
+          id="showCalc"
+          class="border border-gray-300 rounded-md p-5 h-[250px]"
+        >
+          <h2 class="font-bold text-2xl">Area Calculation</h2>
         </div>
       </div>
     </main>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/triangleAria.js"></script>
   </body>
 </html>
