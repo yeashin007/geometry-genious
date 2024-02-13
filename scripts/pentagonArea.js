@@ -1,7 +1,7 @@
 document.querySelector("#btn-pentagon").addEventListener("click", function () {
   const base = inputValue("#pentagon-base");
   const height = inputValue("#pentagon-height");
-  const area = 0.5 * base * height;
+  const area = (0.5 * base * height).toFixed(2);
 
   showCalculation("Base", base, "Height", height, "Area", area);
 

@@ -3,7 +3,7 @@ document
   .addEventListener("click", function () {
     const base = inputValue("#parallelogram-base");
     const height = inputValue("#parallelogram-height");
-    const area = base * height;
+    const area = (base * height).toFixed(2);
 
     showCalculation("Base", base, "Height", height, "Area", area);
 
