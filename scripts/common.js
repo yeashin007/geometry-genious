@@ -1,5 +1,3 @@
-console.log("connected");
-
 function inputValue(id) {
   const input = document.querySelector(id);
   const value = Number(input.value);

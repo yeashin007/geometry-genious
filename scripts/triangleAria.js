@@ -1,16 +1,7 @@
 document.querySelector("#btn-triangle").addEventListener("click", function () {
-  const triangleBase = inputValue("#triangle-base");
+  const base = inputValue("#triangle-base");
+  const height = inputValue("#triangle-height");
+  const area = 0.5 * base * height;
 
-  const triangleHeight = inputValue("#triangle-height");
-
-  const triangleAria = 0.5 * triangleBase * triangleHeight;
-
-  showCalculation(
-    "Base",
-    triangleBase,
-    "Height",
-    triangleHeight,
-    "Area",
-    triangleAria
-  );
+  showCalculation("Base", base, "Height", height, "Area", area);
 });

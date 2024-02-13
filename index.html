@@ -34,7 +34,7 @@
           class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
         >
           <!-- card: 1 -->
-          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md shadow-xl">
             <figure class="p-4 shadow">
               <img
                 src="./images/triangle.png"
@@ -73,7 +73,7 @@
           </div>
 
           <!-- card: 2 -->
-          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md shadow-xl">
             <figure class="p-4 shadow">
               <img
                 src="./images/rectangle.png"
@@ -82,10 +82,11 @@
               />
             </figure>
             <h3 class="text-3xl font-semibold">Rectangle</h3>
-            <p>Area [A] = 0.5 X w X l</p>
+            <p>Area [A] = w X l</p>
             <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
+                  id="rectangle-length"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="w"
@@ -94,6 +95,7 @@
               </div>
               <div>
                 <input
+                  id="rectangle-width"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="l"
@@ -102,6 +104,7 @@
               </div>
             </div>
             <button
+              id="btn-rectangle"
               class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
             >
               Calculate
@@ -109,7 +112,7 @@
           </div>
 
           <!-- card: 3 -->
-          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md shadow-xl">
             <figure class="p-4 shadow">
               <img
                 src="./images/parallelogram.png"
@@ -122,6 +125,7 @@
             <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
+                  id="parallelogram-base"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="b"
@@ -130,6 +134,7 @@
               </div>
               <div>
                 <input
+                  id="parallelogram-height"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="h"
@@ -138,6 +143,7 @@
               </div>
             </div>
             <button
+              id="btn-parallelogram"
               class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
             >
               Calculate
@@ -145,7 +151,7 @@
           </div>
 
           <!-- card: 4 -->
-          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md shadow-xl">
             <figure class="p-4 shadow">
               <img src="./images/rhombus.png" alt="rhombus pic" class="h-40" />
             </figure>
@@ -154,6 +160,7 @@
             <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
+                  id="rhombus-diagonal-1"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="d1"
@@ -162,6 +169,7 @@
               </div>
               <div>
                 <input
+                  id="rhombus-diagonal-2"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="d2"
@@ -170,6 +178,7 @@
               </div>
             </div>
             <button
+              id="btn-rhombus"
               class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
             >
               Calculate
@@ -177,7 +186,7 @@
           </div>
 
           <!-- card: 5 -->
-          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md shadow-xl">
             <figure class="p-4 shadow">
               <img
                 src="./images/pentagon.png"
@@ -190,6 +199,7 @@
             <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
+                  id="pentagon-base"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="p"
@@ -198,6 +208,7 @@
               </div>
               <div>
                 <input
+                  id="pentagon-height"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="b"
@@ -206,6 +217,7 @@
               </div>
             </div>
             <button
+              id="btn-pentagon"
               class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
             >
               Calculate
@@ -213,7 +225,7 @@
           </div>
 
           <!-- card: 6 -->
-          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md shadow-xl">
             <figure class="p-4 shadow">
               <img src="./images/ellipse.png" alt="ellipse pic" class="h-40" />
             </figure>
@@ -222,6 +234,7 @@
             <div class="flex flex-col gap-y-2 lg:flex-row justify-between">
               <div>
                 <input
+                  id="ellipseAxis-1"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="a"
@@ -230,6 +243,7 @@
               </div>
               <div>
                 <input
+                  id="ellipseAxis-2"
                   type="text"
                   class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
                   placeholder="b"
@@ -238,6 +252,7 @@
               </div>
             </div>
             <button
+              id="btn-ellipse"
               class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
             >
               Calculate
@@ -255,5 +270,10 @@
 
     <script src="scripts/common.js"></script>
     <script src="scripts/triangleAria.js"></script>
+    <script src="scripts/rectangleArea.js"></script>
+    <script src="scripts/parallelogramArea.js"></script>
+    <script src="scripts/rhombusArea.js"></script>
+    <script src="scripts/pentagonArea.js"></script>
+    <script src="scripts/ellipseArea.js"></script>
   </body>
 </html>
