@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genious</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="my-12 mx-auto">
+      <div
+        class="max-w-[1920px] w-full md:w-11/12 bg-[#1099d8] mx-auto p-5 md:p-8 rounded flex justify-between items-center"
+      >
+        <h2 class="text-3xl lg:text-5xl font-bold">
+          Interactive <br /><span
+            class="font-medium text-gray-300 text-xl lg:text-3xl"
+            >Geometry Genious</span
+          >
+        </h2>
+        <button class="btn">Blog</button>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="max-w-[1920px] w-full lg:w-11/12 mx-auto p-2 lg:p-8">
+      <div class="flex gap-x-8">
+        <div
+          class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+        >
+          <!-- card: 1 -->
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+            <figure class="p-4 shadow">
+              <img
+                src="./images/triangle.png"
+                alt="triangle pic"
+                class="h-40"
+              />
+            </figure>
+            <h3 class="text-3xl font-semibold">Triangle</h3>
+            <p>Area [A] = 0.5 X b X h</p>
+            <div class="flex justify-between">
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="b"
+                />
+                <span>CM</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="h"
+                />
+                <span>CM</span>
+              </div>
+            </div>
+            <button
+              class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- card: 2 -->
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+            <figure class="p-4 shadow">
+              <img
+                src="./images/rectangle.png"
+                alt="rectangle pic"
+                class="h-40"
+              />
+            </figure>
+            <h3 class="text-3xl font-semibold">Rectangle</h3>
+            <p>Area [A] = 0.5 X w X l</p>
+            <div class="flex justify-between">
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="w"
+                />
+                <span>CM</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="l"
+                />
+                <span>CM</span>
+              </div>
+            </div>
+            <button
+              class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- card: 3 -->
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+            <figure class="p-4 shadow">
+              <img
+                src="./images/parallelogram.png"
+                alt="parallelogram pic"
+                class="h-40"
+              />
+            </figure>
+            <h3 class="text-3xl font-semibold">Parallelogram</h3>
+            <p>Area [A] = b X h</p>
+            <div class="flex justify-between">
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="b"
+                />
+                <span>CM</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="h"
+                />
+                <span>CM</span>
+              </div>
+            </div>
+            <button
+              class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- card: 4 -->
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+            <figure class="p-4 shadow">
+              <img src="./images/rhombus.png" alt="rhombus pic" class="h-40" />
+            </figure>
+            <h3 class="text-3xl font-semibold">Rhombus</h3>
+            <p>Area [A] = 0.5 X d1 X d2</p>
+            <div class="flex justify-between">
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="d1"
+                />
+                <span>CM</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="d2"
+                />
+                <span>CM</span>
+              </div>
+            </div>
+            <button
+              class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- card: 5 -->
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+            <figure class="p-4 shadow">
+              <img
+                src="./images/pentagon.png"
+                alt="pentagon pic"
+                class="h-40"
+              />
+            </figure>
+            <h3 class="text-3xl font-semibold">Pentagon</h3>
+            <p>Area [A] = 0.5 X p X b</p>
+            <div class="flex justify-between">
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="p"
+                />
+                <span>CM</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="b"
+                />
+                <span>CM</span>
+              </div>
+            </div>
+            <button
+              class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
+            >
+              Calculate
+            </button>
+          </div>
+
+          <!-- card: 6 -->
+          <div class="p-3 mx-auto text-center space-y-3 rounded-md">
+            <figure class="p-4 shadow">
+              <img src="./images/ellipse.png" alt="ellipse pic" class="h-40" />
+            </figure>
+            <h3 class="text-3xl font-semibold">Ellipse</h3>
+            <p>Area [A] = π X a X b</p>
+            <div class="flex justify-between">
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="a"
+                />
+                <span>CM</span>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="p-1 rounded-md outline-0 w-[100px] bg-gray-200"
+                  placeholder="b"
+                />
+                <span>CM</span>
+              </div>
+            </div>
+            <button
+              class="btn w-full text-2xl bg-[#1090D8] text-white hover:bg-white hover:text-[#1090D8] hover:shadow-lg duration-300"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2
+            class="font-bold text-2xl border border-gray-300 rounded-md p-5 h-[250px]"
+          >
+            Area Calculation
+          </h2>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
