@@ -4,4 +4,7 @@ document.querySelector("#btn-ellipse").addEventListener("click", function () {
   const area = (Math.PI * axis_1 * axis_2).toFixed(2);
 
   showCalculation("Axis-1", axis_1, "Axis-2", axis_2, "Area", area);
+
+  document.querySelector("#ellipse-container").style.backgroundColor =
+    "rgba(10, 100, 150, .2)";
 });

@@ -11,4 +11,7 @@ document.querySelector("#btn-rhombus").addEventListener("click", function () {
     "Area",
     area
   );
+
+  document.querySelector("#rhombus-container").style.backgroundColor =
+    "rgba(0,0,255, .2)";
 });

@@ -4,4 +4,7 @@ document.querySelector("#btn-rectangle").addEventListener("click", function () {
   const area = length * width;
 
   showCalculation("Length", length, "Width", width, "Area", area);
+
+  document.querySelector("#rectangle-container").style.backgroundColor =
+    "rgba(0,255,0, .2)";
 });
